@@ -23,4 +23,5 @@ Easily manage people and projects related to Girleek's missions using the latest
 <p>✔️CORS</p>
 <p>✔️EXPRESS</p>
 <p>✔️DOTENV</p>
+<p>✔️BCRYPTJS</p>
 <p>✔️COLORS</p>
