@@ -4,18 +4,34 @@ const mongoose = require('mongoose');
 //MODELS SCHEMAS AS NOTHING TO DO WITH GRAPHQL SCHEMAS !!
 const ClientSchema = new mongoose.Schema({
   name: {
-    type: String,
+    // type: String, unique: true, required: true
+    type: String
+  },
+  userName: {
+    type: String
+  },
+  password: {type: String},
+  img:
+  {
+      data: Buffer,
+      contentType: String
   },
   email: {
-    type: String,
+    type: String
   },
-  phone: {
-    type: String,
+  bio: {
+    type: String
   },
-  job: {
-    type: String,
+  industryCat: {
+    type: String
   },
   mainProject: {
+    type: String
+  },
+  linkedinUrl: {
+    type: String
+  },
+  location: {
     type: String,
   },
 });
