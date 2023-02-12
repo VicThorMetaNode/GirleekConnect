@@ -6,6 +6,7 @@ const Coach = require("../models/Coach");
 const Client = require("../models/Client");
 const Project = require("../models/Project");
 const Event = require("../models/Event");
+const Admin = require("../models/Admin");
 
 //-------------------- GRAPHQL SETUP
 //WHEN HAVING NUMEROUS DATA AS PROJECTS & CLIENTS YOU NEED TYPE AS REF
@@ -22,6 +23,15 @@ const {
 // ----------------- TYPES -------------
 
 //COACH TYPE: convention use Capitalize
+const AdminType = new GraphQLObjectType({
+  name: "Admin",
+  fields: () => ({
+    id: { type: GraphQLID },
+    userName: { type: GraphQLString },
+    password: { type: GraphQLString },
+  }),
+});
+
 const CoachType = new GraphQLObjectType({
   name: "Coach",
   fields: () => ({
@@ -100,11 +110,29 @@ const EventType = new GraphQLObjectType({
 });
 
 // ----------------- QUERIES -------------
-//TO GET: CREATE ROOT QUERY OBJECTS + we need to pass args as argument to get ID by coach
+//TO GET: CREATE ROOT QUERY OBJECTS + we need to pass args as argument to get ID by type
 //resolve may be seen as the return with is a fct and has a parent's value and args
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: {
+     //all admins query using a list of CoachType
+     admins: {
+      type: new GraphQLList(CoachType),
+      resolve(parent, args) {
+        //Query to mongoose models and because we want all data from coach we don't specify in the find()
+        return Admin.find();
+        // return admins;
+      },
+    },
+    //single admin query
+    admin: {
+      type: AdminType,
+      args: { id: { type: GraphQLID } },
+      resolve(parent, args) {
+        //when using a single data sample
+        return Admin.findById(args.id); 
+      },
+    },
     //all coaches query using a list of CoachType
     coaches: {
       type: new GraphQLList(CoachType),
@@ -189,6 +217,23 @@ const RootQuery = new GraphQLObjectType({
 const mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
+      //------ ADD ADMIN
+      addAdmin: {
+        type: AdminType,
+        args: {
+          //if you want input as MANDATORY use GraphQLNonNull
+          userName: { type: GraphQLNonNull(GraphQLString) },
+          password: { type: GraphQLNonNull(GraphQLString) },
+        },
+        resolve(parent, args) {
+         
+          const admin = new Admin({
+            userName: args.userName,
+            password: args.password,
+          });
+          return admin.save();
+        },
+      },
     //------ ADD COACH
     addCoach: {
       type: CoachType,

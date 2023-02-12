@@ -3,26 +3,13 @@ const mongoose = require('mongoose');
 
 //MODELS SCHEMAS AS NOTHING TO DO WITH GRAPHQL SCHEMAS !!
 const AdminSchema = new mongoose.Schema({
-  name: {
+  userName: {
     type: String,
   },
-  img:
-  {
-      data: Buffer,
-      contentType: String
-  },
-  email: {
+  password: {
     type: String,
   },
-  phone: {
-    type: String,
-  },
-  function: {
-    type: String,
-  },
-  mainProject: {
-    type: String,
-  },
+  
 });
 
 module.exports = mongoose.model('Admin', AdminSchema);
