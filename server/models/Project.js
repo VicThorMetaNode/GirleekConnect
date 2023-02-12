@@ -4,10 +4,10 @@ const mongoose = require('mongoose');
 //MODELS SCHEMAS AS NOTHING TO DO WITH GRAPHQL SCHEMAS !!
 const ProjectSchema = new mongoose.Schema({
   name: {
-    type: String, unique: true, required: true
+    type: String
   },
   description: {
-    type: String,  required: true
+    type: String
   },
   img:
   {
@@ -15,7 +15,7 @@ const ProjectSchema = new mongoose.Schema({
       contentType: String
   },
   status: {
-    type: String, required: true,
+    type: String, 
     enum: ['Not Started', 'BackLog', 'SprintLog', 'In Progress', 'Under Review', 'Waiting Validation', 'Completed', 'Discarded'],
   },
   coachId: {

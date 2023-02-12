@@ -8,6 +8,7 @@ const Project = require("../models/Project");
 const Event = require("../models/Event");
 const Admin = require("../models/Admin");
 
+const bcrypt = require("bcryptjs");
 //-------------------- GRAPHQL SETUP
 //WHEN HAVING NUMEROUS DATA AS PROJECTS & CLIENTS YOU NEED TYPE AS REF
 const {
@@ -115,8 +116,8 @@ const EventType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: {
-     //all admins query using a list of CoachType
-     admins: {
+    //all admins query using a list of CoachType
+    admins: {
       type: new GraphQLList(CoachType),
       resolve(parent, args) {
         //Query to mongoose models and because we want all data from coach we don't specify in the find()
@@ -130,7 +131,7 @@ const RootQuery = new GraphQLObjectType({
       args: { id: { type: GraphQLID } },
       resolve(parent, args) {
         //when using a single data sample
-        return Admin.findById(args.id); 
+        return Admin.findById(args.id);
       },
     },
     //all coaches query using a list of CoachType
@@ -217,23 +218,42 @@ const RootQuery = new GraphQLObjectType({
 const mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
-      //------ ADD ADMIN
-      addAdmin: {
-        type: AdminType,
-        args: {
-          //if you want input as MANDATORY use GraphQLNonNull
-          userName: { type: GraphQLNonNull(GraphQLString) },
-          password: { type: GraphQLNonNull(GraphQLString) },
-        },
-        resolve(parent, args) {
-         
-          const admin = new Admin({
-            userName: args.userName,
-            password: args.password,
-          });
-          return admin.save();
-        },
+    //------ ADD ADMIN
+    // addAdmin: {
+    //   type: AdminType,
+    //   args: {
+    //     //if you want input as MANDATORY use GraphQLNonNull
+    //     userName: { type: GraphQLNonNull(GraphQLString) },
+    //     password: { type: GraphQLNonNull(GraphQLString) },
+    //   },
+    //   resolve(parent, args) {
+
+    //     const admin = new Admin({
+    //       userName: args.userName,
+    //       password: args.password,
+    //     });
+    //     return admin.save();
+    //   },
+    // },
+
+    addAdmin: {
+      type: AdminType,
+      args: {
+        userName: { type: GraphQLNonNull(GraphQLString) },
+        password: { type: GraphQLNonNull(GraphQLString) },
       },
+      async resolve(parent, args) {
+        const hashedPassword = await bcrypt.hash(args.password, 10);
+
+        const admin = new Admin({
+          userName: args.userName,
+          password: hashedPassword,
+        });
+
+        return admin.save();
+      },
+    },
+
     //------ ADD COACH
     addCoach: {
       type: CoachType,
@@ -251,7 +271,6 @@ const mutation = new GraphQLObjectType({
         imageUrl: { type: GraphQLString },
       },
       resolve(parent, args) {
-       
         const coach = new Coach({
           name: args.name,
           email: args.email,
