@@ -1,4 +1,4 @@
-# COACHES & PROJECTS MANAGEMENT PLATEFORM
+# COACHES & PROJECTS MANAGEMENT PLATFORM
 Easily manage people and projects related to Girleek's missions using the latest technologies: **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speddy Web Compiler]** 
 ![Girleek-connect01](https://user-images.githubusercontent.com/98230162/218571019-f49563f5-8258-47eb-b68f-35e154e445b6.PNG)
 
