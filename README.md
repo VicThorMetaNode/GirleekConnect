@@ -8,6 +8,7 @@ Easily manage people and projects related to Girleek's missions using the latest
 <p>🗹 Netlify</p>
 <p>------------------</p>
 <p>📦NPM Packages used:</p>
+
 **CLIENT-SIDE**
 <p>✔️React-router-dom</p>
 <p>✔️Vitejs/plugin-react-swc</p>
