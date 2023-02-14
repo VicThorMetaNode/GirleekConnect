@@ -5,6 +5,8 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+    
     screens: {
       sm: '480px',
       md: '768px',
@@ -35,13 +37,9 @@ module.exports = {
       connect: ['Inria Sans', 'sans-serif'],
       barcode: ['Libre Barcode 39 Text', 'cursive'],  
     },
-    extend: {
-    },
+    
   },
-  variants: {
-    extend: {
-    },
-  },
+ 
   plugins: [
     //----- BTN
     function ({customButtons}) {
@@ -153,4 +151,5 @@ module.exports = {
     }
 
   ],
+},
 }
