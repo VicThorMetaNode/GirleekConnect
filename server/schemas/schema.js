@@ -219,26 +219,10 @@ const mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
     //------ ADD ADMIN
-    // addAdmin: {
-    //   type: AdminType,
-    //   args: {
-    //     //if you want input as MANDATORY use GraphQLNonNull
-    //     userName: { type: GraphQLNonNull(GraphQLString) },
-    //     password: { type: GraphQLNonNull(GraphQLString) },
-    //   },
-    //   resolve(parent, args) {
-
-    //     const admin = new Admin({
-    //       userName: args.userName,
-    //       password: args.password,
-    //     });
-    //     return admin.save();
-    //   },
-    // },
-
     addAdmin: {
       type: AdminType,
       args: {
+        //if you want input as MANDATORY use GraphQLNonNull
         userName: { type: GraphQLNonNull(GraphQLString) },
         password: { type: GraphQLNonNull(GraphQLString) },
       },
