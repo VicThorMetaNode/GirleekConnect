@@ -5,3 +5,36 @@
 
 
 /* bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200 */
+
+
+  @layer components {
+    .btn-connect {
+        display: inline-block;
+        padding: 0.2rem 0.7rem 0.2rem 0.7rem ;
+        font-weight: 400;
+        white-space: nowrap;
+        text-align: center;
+        font-family: theme('fontFamily.connect');
+        text-transform: uppercase;
+        color: theme('colors.pink');
+        background-color: theme('colors.navy.DEFAULT');
+       
+    }
+    .btn-disabled {
+      display: inline-block;
+      padding: .5rem 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+      white-space: nowrap;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      color: #ff0066;
+      background-color: #f4f4f4;
+      border-width: 2px;
+      border-color: #ff0066;
+      cursor: not-allowed;
+    }
+  }
+
+  
