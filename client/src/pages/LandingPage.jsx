@@ -1,10 +1,12 @@
 import React from "react";
 import HeroBanner from "../components/HeroBanner";
-import { girleek1 } from "../assets/index";
+import { girleek1, girleek4 } from "../assets/index";
 import {
   ShortPropsCourse,
   CustomButton,
   EventArticleProps,
+  AgendaProps,
+  JoinProps,
 } from "../components";
 import { ImPlay2 } from "react-icons/im";
 const LandingPage = () => {
@@ -50,6 +52,58 @@ const LandingPage = () => {
             year="2023"
             title="build your brand on tiktok"
             desc="Id labore recusandae non ipsam dolorum qui voluptate tempore ea quaerat delectus? Sit voluptas sunt et illo consequatur et ratione ratione ut distinctio officia et aliquam nesciunt. Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum. Et omnis accusamus qui repellendus sint et animi voluptate aut debitis labore."
+          />
+        </div>
+        <div className="flex flex-col justify-left ml-8 mt-6 mb-10">
+          <p className="whitespace-nowrap uppercase font-title text-alt-white text-3xl">
+            AGENDA:
+          </p>
+          <div>
+            <AgendaProps
+              eventName="masterclass"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+            <AgendaProps
+              eventName="webinar"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+            <AgendaProps
+              eventName="workshop"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+            <AgendaProps
+              eventName="coaching"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+            <AgendaProps
+              eventName="networking"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+            <AgendaProps
+              eventName="talk"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+            <AgendaProps
+              eventName="partner"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+            <AgendaProps
+              eventName="other"
+              desc="Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum."
+            />
+          </div>
+        </div>
+        <div>
+          <JoinProps
+            src={girleek4}
+            alt={"image woman"}
+            imgClassName={"w-full md:w-700px"}
+            btnTitle={"see locations"}
+            codeBar={"join forces"}
+            title={"join forces"}
+            desc={
+              "Build together. Community-driven co-working spaces for woman first."
+            }
           />
         </div>
       </section>
