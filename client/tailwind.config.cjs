@@ -10,16 +10,21 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
-      xl: '1440px',
+      xl: '1220px',
     },
     fontSize: {
       sm: '0.8rem',
+      md: '0.9rem',
       base: '1rem',
+      lg: '1.15rem',
       xl: '1.25rem',
       '2xl': '1.563rem',
       '3xl': '1.953rem',
       '4xl': '2.441rem',
       '5xl': '3.052rem',
+      '6xl': '5.052rem',
+      '7xl': '7.052rem',
+      '8xl': '9.052rem',
     },
     colors: {
       transparent: 'transparent',
@@ -29,13 +34,15 @@ module.exports = {
         light: '#292562',
     },
       'pink': '#D2295A',
-      'l-pink': '#DF7090',
+      'alt-pink': '#DF7090',
       'white': '#FFFFFF',
       'alt-white': '#C7CCDB',
-      'l-blue': '#292562',
+      'alt-blue': '#292562',
       'blue': '#242244',
       'gray': '#242238',
       'alt-gray': '#242244',
+      'icon-gray': '#2A324B',
+      'blue-connect': '#1D1A3F',
     },
     fontFamily: {
       main: ['Barlow', 'sans-serif'],
@@ -57,61 +64,9 @@ module.exports = {
 //----- BTN
 // function ({customButtons}) {
 //   customButtons({
-//     '.btn-connect': {
-//       display: 'inline-block',
-//       padding: '.5rem 1rem',
-//       fontSize: '1rem',
-//       fontWeight: '600',
-//       whiteSpace:'nowrap',
-//       textAlign: 'center',
-//       fontFamily: theme('fontFamily.connect'),
-//       textTransform: 'uppercase',
-//       color: theme('colors.pink'),
-//       backgroundColor: theme('colors.main-navy'),
-//        // Add transitions to background and text color
-//       // transition: 'background-color 0.2s ease-in-out, color 0.2s ease-in-out',
-//       // '&:hover': {
-//       //   color: theme('colors.pink'),
-//       //   backgroundColor: theme('colors.main-navy'),
-//       // },
-//     },
-//     '.btn-action': {
-//       display: 'inline-block',
-//       padding: '.5rem 1rem',
-//       fontSize: '1rem',
-//       fontWeight: '600',
-//       whiteSpace:'nowrap',
-//       textAlign: 'center',
-//       fontFamily: theme('fontFamily.btn'),
-//       textTransform: 'uppercase',
-//       color: theme('colors.white'),
-//       backgroundColor: theme('colors.pink'),
-//       borderWidth: '2px',
-//       borderColor: theme('colors.alt-white'),
-//        // Add transitions to background and text color
-//       transition: 'background-color 0.2s ease-in-out, color 0.2s ease-in-out',
-//       '&:hover': {
-//         color: theme('colors.pink'),
-//         backgroundColor: theme('colors.main-navy'),
-//       },
-//     },
-//     '.btn-passive': {
-//       display: 'inline-block',
-//       padding: '.5rem 1rem',
-//       fontSize: '1rem',
-//       fontWeight: '400',
-//       whiteSpace:'nowrap',
-//       textAlign: 'center',
-//       fontFamily: theme('fontFamily.btn'),
-//       textTransform: 'uppercase',
-//       color: theme('colors.alt-white'),
-//       backgroundColor: theme('colors.main-navy.light'),
-//        // Add transitions to background and text color
-//       transition: 'background-color 0.2s ease-in-out, color 0.2s ease-in-out',
-//       '&:hover': {
-//         color: theme('colors.pink'),
-//         backgroundColor: theme('colors.main-navy'),
-//       },
+//     
+//  
+//     
 //     },
 //     '.btn-large-icon': {
 //       display: 'flex',
@@ -145,20 +100,6 @@ module.exports = {
 //       borderWidth: '2px',
 //       borderColor: theme('colors.white'),
 //     },
-//     '.btn-disabled': {
-//       display: 'inline-block',
-//       padding: '.5rem 1rem',
-//       fontSize: '2rem',
-//       fontWeight: '600',
-//       whiteSpace:'nowrap',
-//       textAlign: 'center',
-//       fontFamily: theme('fontFamily.btn'),
-//       textTransform: 'uppercase',
-//       color: theme('colors.pink'),
-//       backgroundColor: theme('colors.alt-gray'),
-//       borderWidth: '2px',
-//       borderColor: theme('colors.pink'),
-//       cursor: 'not-allowed',
-//     }
+//    
 //   })
 // }

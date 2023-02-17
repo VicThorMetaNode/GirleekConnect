@@ -5,7 +5,17 @@
 
 
 /* bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200 */
+*,
+::after,
+::before {
+  margin:0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+}
 
+body {
+  background: theme('colors.navy.DEFAULT') !important;
+}
 
   @layer components {
     .btn-connect {
@@ -17,8 +27,30 @@
         font-family: theme('fontFamily.connect');
         text-transform: uppercase;
         color: theme('colors.pink');
-        background-color: theme('colors.navy.DEFAULT');
-       
+        background-color: theme('colors.blue-connect'); 
+    }
+    .btn-passive {
+      display: inline-block;
+      padding: 0.2rem 0.7rem 0.2rem 0.7rem ;
+      font-weight: 300;
+      white-space: nowrap;
+      text-align: center;
+      font-family: theme('fontFamily.btn');
+      text-transform: uppercase;
+      color: theme('colors.alt-white');
+      background-color: theme('colors.navy.light'); 
+    }
+    .btn-action {
+      display: inline-block;
+      padding: 0.2rem 0.7rem 0.2rem 0.7rem ;
+      font-weight: 300;
+      white-space: nowrap;
+      text-align: center;
+      border: 1px solid theme('colors.alt-white');
+      font-family: theme('fontFamily.btn');
+      text-transform: uppercase;
+      color: theme('colors.alt-white');
+      background-color: theme('colors.pink'); 
     }
     .btn-disabled {
       display: inline-block;
@@ -38,3 +70,4 @@
   }
 
   
+

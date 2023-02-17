@@ -12,21 +12,22 @@ const Navbar = () => {
   return (
     <div className="relative md:flex md:justify-between bg-pink w-[100%]">
       <div className="flex justify-center">
-        <div className="max-w-[458px] bg-navy rounded-full w-[3rem] md:w-[7rem]">
+        <div className="max-w-[458px] bg-navy rounded-full w-[2.5rem] m-[.2rem] md:w-[3rem] md:m-[.5rem]">
           <img src={gk} alt="logo image" className="object-contain" />
         </div>
       </div>
-      <div className="absolute top-0 right-0 md:top-5 sm:right-5 p-2">
+      <div className="absolute top-0 right-0 md:top-1 md:right-5 p-2">
         <CustomButton
           btnType="button"
           title={"Connect"}
-          styles={"btn-connect text-sm py-1 px-4 md:text-xl md:px-8 md:py-2"}
+          styles={"btn-connect text-sm py-1 px-4 md:text-lg md:px-4 md:py-1.5"}
           handleClick={() => {
             navigate("connect");
           }}
         />
       </div>
     </div>
+
     // <div className="flex md:flex-row justify-between bg-pink">
     //   <div className="self-center">
     //     <div className="max-w-[458px] bg-navy rounded-full w-[3rem] md:w-[7rem]">

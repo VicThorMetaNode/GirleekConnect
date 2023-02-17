@@ -19,11 +19,12 @@ import {
 
 const App = () => {
   return (
-    <div className="relative sm:-8 p-4 bg-navy min-h-screen flex flex-row">
-      <div className="sm:flex hidden mr-10 relative">
+    <div className="relative bg-navy flex flex-row ">
+      <div className="sm:flex hidden min-h-screen  relative bg-blue">
         <Sidebar />
       </div>
-      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
+      <div className="flex-1 max-sm:w-full mx-auto ">
+        {/* <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto "> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -42,32 +43,3 @@ const App = () => {
 };
 
 export default App;
-
-/* <div x-data="{ open: false }" class="fixed left-0 transform translate-x-full transition-transform duration-300 ease-in-out bg-gray-200 w-64 h-screen">
-  <!-- sidebar content -->
-</div>
-
-<script>
-  // add swipe event listener to body
-  document.querySelector('body').addEventListener('touchstart', handleTouchStart, false);        
-  document.querySelector('body').addEventListener('touchmove', handleTouchMove, false);
-
-  let startX;
-
-  function handleTouchStart(event) {
-    startX = event.touches[0].clientX;
-  }
-
-  function handleTouchMove(event) {
-    if (startX - event.touches[0].clientX > 50) {
-      // user has swiped from left to right
-      document.querySelector('.fixed').classList.add('open');
-    }
-  }
-</script>
-
-<style>
-  .open {
-    @apply frame-inset-x-0;
-  }
-</style> */
