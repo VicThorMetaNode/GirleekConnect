@@ -1,12 +1,13 @@
 import React from "react";
 import HeroBanner from "../components/HeroBanner";
-import { girleek1, girleek4 } from "../assets/index";
+import { girleek1, girleek2, girleek4 } from "../assets/index";
 import {
   ShortPropsCourse,
   CustomButton,
   EventArticleProps,
   AgendaProps,
   JoinProps,
+  NextUpgrade,
 } from "../components";
 import { ImPlay2 } from "react-icons/im";
 const LandingPage = () => {
@@ -40,7 +41,7 @@ const LandingPage = () => {
               />
               <ImPlay2
                 size="1.5rem"
-                className="text-alt-white bg-icon-gray rounded-xl mt-[0.1rem]"
+                className="text-alt-white bg-icon-gray rounded-xl mt-[0.1rem] animate-pulse duration-500 ease-in-out "
               />
             </div>
           </div>
@@ -93,17 +94,34 @@ const LandingPage = () => {
             />
           </div>
         </div>
-        <div>
+        <div className="mb-[10rem]">
           <JoinProps
             src={girleek4}
             alt={"image woman"}
-            imgClassName={"w-full md:w-700px"}
+            imgClassName={"w-full ml-5"}
             btnTitle={"see locations"}
-            codeBar={"join forces"}
+            codeBar={"---------"}
             title={"join forces"}
             desc={
               "Build together. Community-driven co-working spaces for woman first."
             }
+            location={
+              <>
+                <span className="text-pink font-semibold uppercase">
+                  Brussels //
+                </span>
+                - 44 rue d'Arenberg
+              </>
+            }
+          />
+        </div>
+        <div className="">
+          <NextUpgrade
+            title={"next upgrade"}
+            btnText={"join event"}
+            src={girleek2}
+            alt={"photo nerd woman"}
+            imgClassName={"w-full"}
           />
         </div>
       </section>

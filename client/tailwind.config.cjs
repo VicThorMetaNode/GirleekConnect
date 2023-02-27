@@ -50,7 +50,7 @@ module.exports = {
       btn: ['Source Code Pro', 'monospace'],
       title: ['Zen Dots', 'cursive'],
       connect: ['Inria Sans', 'sans-serif'],
-      barcode: ['Libre Barcode 39 Text', 'cursive'],  
+      barcode: ['Libre Barcode 128 Text', 'cursive'],  
     },
     
   },

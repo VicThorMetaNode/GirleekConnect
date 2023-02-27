@@ -6,3 +6,4 @@ export { default as ShortPropsCourse} from './ShortPropsCourse';
 export { default as EventArticleProps} from './EventArticleProps';
 export { default as AgendaProps} from './AgendaProps';
 export { default as JoinProps} from './JoinProps';
+export { default as NextUpgrade} from './NextUpgrade';

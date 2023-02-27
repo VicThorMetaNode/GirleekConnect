@@ -11,9 +11,15 @@ const AgendaProps = ({ eventName, desc }) => {
         </p>
         <button onClick={() => setShowEvent(!showEvent)}>
           {showEvent ? (
-            <FaAngleDoubleUp size="1.5rem" className="text-gray" />
+            <FaAngleDoubleUp
+              size="1.5rem"
+              className="text-gray animate-pulse duration-500 ease-in-out w-full h-full"
+            />
           ) : (
-            <FaAngleDoubleDown size="1.5rem" className="text-pink" />
+            <FaAngleDoubleDown
+              size="1.5rem"
+              className="text-pink animate-pulse duration-500 ease-in-out w-full h-full "
+            />
           )}
         </button>
       </div>
