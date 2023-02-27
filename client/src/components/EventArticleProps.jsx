@@ -9,17 +9,17 @@ const EventArticleProps = ({ dateStart, dateEnd, year, title, desc }) => {
       </div>
       <div className="flex flex-col p-5">
         <div className="mb-1">
-          <p className="whitespace-nowrap uppercase font-btn text-white text-base font-extralight">
+          <p className="whitespace-nowrap uppercase font-btn text-white text-base font-extralight xl:text-xl">
             {dateStart} to {dateEnd} //{year}
           </p>
         </div>
         <div className=" mb-2">
-          <h2 className="font-main text-xl font-semibold text-alt-white uppercase leading-snug ">
+          <h2 className="font-main text-xl font-semibold text-alt-white uppercase leading-snug xl:text-2xl ">
             {title}
           </h2>
         </div>
         <div className="pr-4">
-          <p className="font-mainCond text-md font-extralight text-alt-white">
+          <p className="font-mainCond text-md font-extralight text-alt-white xl:text-xl">
             {desc}
           </p>
         </div>

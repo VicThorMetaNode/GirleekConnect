@@ -3,8 +3,8 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 const NextUpgrade = ({ title, btnText, src, alt, imgClassName }) => {
   return (
     <div className=" mb-5 ml-8 w-[80%] bg-gray ">
-      <div className="border border-white flex flex-row z-0 h-[7rem] ">
-        <div className="flex flex-col  ml-2 mt-2">
+      <div className="border border-white flex flex-row z-0 h-[7rem] md:gap-[15rem] ">
+        <div className="flex flex-col  ml-2 mt-2 ">
           <div>
             <p className="font-main text-xl font-semibold text-alt-white uppercase">
               {" "}
@@ -18,7 +18,7 @@ const NextUpgrade = ({ title, btnText, src, alt, imgClassName }) => {
             className=" border border-alt-white w-[97%]  mb-1 p-1 bg-pink"
           >
             <div className="flex flex-row ">
-              <div className="mr-1">
+              <div className="mr-">
                 <p className="font-btn text-alt-white text-sm whitespace-nowrap uppercase">
                   {" "}
                   {btnText}
@@ -33,7 +33,7 @@ const NextUpgrade = ({ title, btnText, src, alt, imgClassName }) => {
             </div>
           </button>
         </div>
-        <div className="z-1 mt-[-6.7rem]">
+        <div className="z-1 mt-[-6.7rem] md:w-[180px] md:mt-[2rem]">
           <img src={src} alt={alt} className={imgClassName} />
         </div>
       </div>

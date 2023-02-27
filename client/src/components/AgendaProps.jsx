@@ -5,8 +5,8 @@ const AgendaProps = ({ eventName, desc }) => {
   const [showEvent, setShowEvent] = useState(false);
   return (
     <div className="mb-5">
-      <div className="flex justify-between w-[90%] ">
-        <p className="whitespace-nowrap uppercase font-btn text-alt-white text-base font-light">
+      <div className="flex justify-between w-full ">
+        <p className="whitespace-nowrap uppercase font-btn text-alt-white text-base font-light md:text-xl">
           {eventName}
         </p>
         <button onClick={() => setShowEvent(!showEvent)}>
@@ -25,13 +25,13 @@ const AgendaProps = ({ eventName, desc }) => {
       </div>
       <div className="w-[80%] mt-1 ">
         {showEvent && (
-          <p className="font-mainCond text-md font-extralight text-alt-white">
+          <p className="font-mainCond text-md font-extralight text-alt-white md:text-lg">
             {desc}
           </p>
         )}
       </div>
       <div className="flex justify-left mt-3">
-        <hr className="text-alt-white w-[18rem] " />
+        <hr className="text-alt-white w-full " />
       </div>
     </div>
   );

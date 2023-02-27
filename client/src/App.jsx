@@ -20,7 +20,7 @@ import {
 const App = () => {
   return (
     <div className="relative bg-navy flex flex-row ">
-      <div className="sm:flex hidden min-h-screen  relative bg-blue">
+      <div className="sm:flex hidden min-h-screen  relative bg-blue w-[5rem]">
         <Sidebar />
       </div>
       <div className="flex-1 max-sm:w-full mx-auto ">

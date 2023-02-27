@@ -23,11 +23,11 @@ const JoinProps = ({
         </div>
         <div>
           <div className=" p-4">
-            <p className="font-main text-xl font-semibold text-alt-white uppercase">
+            <p className="font-main text-xl font-semibold text-alt-white uppercase md:text-2xl">
               {title}
             </p>
-            <div className="w-[90%]">
-              <p className="font-mainCond text-md font-extralight text-alt-white leading-snug">
+            <div className="w-[90%] md:w-[80%]">
+              <p className="font-mainCond text-md font-extralight text-alt-white leading-snug md:text-2xl">
                 {desc}
               </p>
             </div>
@@ -40,28 +40,28 @@ const JoinProps = ({
               {showLocation ? (
                 <div className="flex flex-row ">
                   <div>
-                    <p className="font-btn text-alt-white text-sm whitespace-nowrap ">
+                    <p className="font-btn text-alt-white text-sm whitespace-nowrap md:text-md">
                       {location}
                     </p>
                   </div>
-                  <div className="ml-auto ">
+                  <div className="ml-auto">
                     <FaAngleDoubleUp
-                      size="1.2rem"
-                      className="text-gray animate-bounce duration-500 ease-in-out w-full h-full"
+                      size="1.5rem"
+                      className="text-icon-gray animate-pulse duration-500 ease-in-out w-full h-full"
                     />
                   </div>
                 </div>
               ) : (
                 <div className="flex flex-row ">
                   <div className="ml-10">
-                    <p className="font-btn font-semibold text-pink uppercase">
+                    <p className="font-btn font-semibold text-pink uppercase md:text-xl">
                       {btnTitle}
                     </p>
                   </div>
                   <div className="ml-auto ">
                     <FaAngleDoubleDown
                       size="1.5rem"
-                      className="text-pink animate-bounce duration-500 ease-in-out w-full h-full "
+                      className="text-pink animate-pulse duration-500 ease-in-out w-full h-full "
                     />
                   </div>
                 </div>

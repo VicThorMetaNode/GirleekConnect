@@ -9,8 +9,9 @@ module.exports = {
     screens: {
       sm: '480px',
       md: '768px',
-      lg: '976px',
-      xl: '1220px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px'
     },
     fontSize: {
       sm: '0.8rem',
