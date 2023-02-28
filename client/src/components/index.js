@@ -11,3 +11,5 @@ export { default as JoinProps} from './JoinProps';
 export { default as NextUpgrade} from './NextUpgrade';
 export { default as CoachForm} from './CoachForm';
 export { default as YourLatestList} from './YourLatestList';
+export { default as TheLatestList} from './TheLatestList';
+export { default as CoachBubble} from './CoachBubble';

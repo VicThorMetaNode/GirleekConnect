@@ -11,7 +11,7 @@ const TopBanner = ({
 }) => {
   return (
     <div className="flex flex-row ">
-      <div className="w-[25%] md:w-[20%]">
+      <div className="w-[30%] md:w-[20%]">
         <img src={src} alt={alt} className={imgClassName} />
       </div>
       <div className={container}>
