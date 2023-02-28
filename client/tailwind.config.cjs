@@ -40,6 +40,7 @@ module.exports = {
       'alt-white': '#C7CCDB',
       'alt-blue': '#292562',
       'blue': '#242244',
+      'blue-bio': '#272456',
       'gray': '#242238',
       'alt-gray': '#242244',
       'icon-gray': '#2A324B',
