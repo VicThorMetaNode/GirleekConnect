@@ -1,6 +1,7 @@
 export { default as Sidebar } from './Sidebar';
 export { default as Navbar } from './Navbar';
 export { default as CustomButton } from './CustomButton';
+export { default as DiscoverBtn } from './DiscoverBtn';
 export { default as HeroBanner } from './HeroBanner';
 export { default as TopBanner } from './TopBanner';
 export { default as ShortPropsCourse} from './ShortPropsCourse';

@@ -1,7 +1,7 @@
 import React from "react";
-import HeroBanner from "../components/HeroBanner";
 import { girleek1, girleek2, girleek4 } from "../assets/index";
 import {
+  HeroBanner,
   ShortPropsCourse,
   CustomButton,
   EventArticleProps,
@@ -20,15 +20,16 @@ const LandingPage = () => {
             colorTitle={"tech"}
             src={girleek1}
             alt={"woman picture"}
-            imgClassName={"w-full "}
+            imgClassName={"w-full"}
             spanClassName={"text-pink font-mainCond md:text-8xl"}
-            container={"md:w-[80%] lg:w-[50%] xl:w-[30%]"}
+            container={" md:w-[80%] lg:w-[50%] xl:w-[30%]"}
             subContainer={"mb-5 ml-2 flex"}
-            h1title={
-              "font-main font-semibold text-5xl pt-[4rem]  pr-8  uppercase text-alt-white  leading-none md:text-8xl md:ml-4 lg:ml-20 xl:ml-60"
+            titleContainer={"pt-[4rem]  pr-8"}
+            h1ClassName={
+              "font-main font-semibold text-5xl  uppercase text-alt-white  leading-none md:text-8xl md:ml-4 lg:ml-20 xl:ml-60"
             }
             imgContainer={
-              "ml-[-16rem] mt-2 md:absolute md:top-4 md:right-20 xl:right-60 "
+              "ml-[-16rem] md:ml-[-5rem] mt-2 md:absolute md:top-4 md:right-20 xl:right-60 "
             }
           />
         </article>
@@ -59,14 +60,23 @@ const LandingPage = () => {
           </div>
           <div className="mt-7 px-8">
             <EventArticleProps
+              container={"border border-alt-white py-5 px-3 md:w-[100%]"}
               dateStart="mar.02"
-              dateEnd="jun.14"
-              year="2023"
+              dateEnd=" to jun.14"
+              year="// 2023"
               title="build your brand on tiktok"
               desc="Id labore recusandae non ipsam dolorum qui voluptate tempore ea quaerat delectus? Sit voluptas sunt et illo consequatur et ratione ratione ut distinctio officia et aliquam nesciunt. Ut eligendi porro eum iste consequatur cum aliquam recusandae ut sunt sapiente est autem illum est totam omnis aut mollitia earum. Et omnis accusamus qui repellendus sint et animi voluptate aut debitis labore."
+              btnType="button"
+              btnTitle={"register now"}
+              styles={
+                "btn-action text-base py-1 px-6 md:text-lg md:px-4 md:py-1.5"
+              }
+              handleClick={() => {
+                navigate("connect");
+              }}
             />
           </div>
-          <div className="flex flex-col mt-6 mb-10 p-10 ">
+          <div className="flex flex-col mt-6 mb-5 p-10 ">
             <p className="whitespace-nowrap uppercase font-title text-alt-white text-3xl">
               AGENDA:
             </p>
@@ -133,6 +143,7 @@ const LandingPage = () => {
               src={girleek2}
               alt={"photo nerd woman"}
               imgClassName={"w-full "}
+              imgContainer={"z-1 mt-[-6.7rem] md:w-[180px] md:mt-[2rem]"}
             />
           </div>
         </article>
