@@ -9,10 +9,10 @@ const NextUpgrade = ({
   imgContainer,
 }) => {
   return (
-    <div className=" mb-5 ml-8 w-[80%] bg-gray ">
-      <div className="border border-white flex flex-row z-0 h-[7rem] gap-10 md:gap-[15rem] ">
+    <div className="w-[full] bg-gray ">
+      <div className="border border-white flex flex-row z-0 h-[7rem] justify-between md:gap-[15rem] ">
         <div className="flex flex-col  ml-2 mt-2 ">
-          <div>
+          <div c>
             <p className="font-main text-xl font-semibold text-alt-white uppercase">
               {" "}
               {title}

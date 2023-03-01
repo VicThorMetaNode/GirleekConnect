@@ -14,24 +14,26 @@ const LandingPage = () => {
   return (
     <>
       <section>
-        <article className=" md:justify-center md:content-center md:m-auto">
-          <HeroBanner
-            title={"leading women to"}
-            colorTitle={"tech"}
-            src={girleek1}
-            alt={"woman picture"}
-            imgClassName={"w-full"}
-            spanClassName={"text-pink font-mainCond md:text-8xl"}
-            container={" md:w-[80%] lg:w-[50%] xl:w-[30%]"}
-            subContainer={"mb-5 ml-2 flex"}
-            titleContainer={"pt-[4rem]  pr-8"}
-            h1ClassName={
-              "font-main font-semibold text-5xl  uppercase text-alt-white  leading-none md:text-8xl md:ml-4 lg:ml-20 xl:ml-60"
-            }
-            imgContainer={
-              "ml-[-16rem] md:ml-[-5rem] mt-2 md:absolute md:top-4 md:right-20 xl:right-60 "
-            }
-          />
+        <article className="md:justify-center md:content-center md:m-auto">
+          <div>
+            <HeroBanner
+              container={" sm:w-[80%] md:w-[80%] lg:w-[50%] xl:w-[30%] "}
+              subContainer={"mb-5 ml-2 flex"}
+              titleContainer={"pt-[4rem] pr-8"}
+              title={"leading women to"}
+              colorTitle={"tech"}
+              src={girleek1}
+              alt={"woman picture"}
+              imgClassName={"w-full "}
+              spanClassName={"text-pink font-mainCond md:text-8xl"}
+              h1ClassName={
+                "font-main font-semibold text-5xl sm:text-6xl uppercase text-alt-white ml-4 leading-none md:text-8xl md:ml-4 lg:ml-20 xl:ml-60 2xl:ml-[30rem]"
+              }
+              imgContainer={
+                "ml-[-16rem] mt-2 md:absolute md:ml-[-5rem] md:top-4 md:right-20 xl:right-60 2xl:right-[30rem]"
+              }
+            />
+          </div>
         </article>
         <article className="md:w-[80%] md:flex md:flex-col md:justify-center md:content-center md:m-auto md:px-20 xl:w-[50%] ">
           <div className="flex justify-left">
@@ -45,16 +47,13 @@ const LandingPage = () => {
                   btnType="button"
                   title={"register now"}
                   styles={
-                    "btn-passive text-sm py-1 px-4 md:text-lg lg:text-2xl md:px-4 md:py-1.5"
+                    "btn-passive text-sm py-1 px-4 md:text-lg lg:text-xl md:px-4 md:py-1.5"
                   }
                   handleClick={() => {
                     navigate("connect");
                   }}
                 />
-                <ImPlay2
-                  size="1.5rem"
-                  className="text-alt-white bg-icon-gray rounded-xl mt-[0.1rem] animate-pulse duration-500 ease-in-out md:mt-[0.5rem] "
-                />
+                <ImPlay2 className="text-alt-white bg-icon-gray rounded-xl mt-[0.1rem] text-lg md:text-2xl animate-pulse duration-500 ease-in-out md:mt-[0.5rem] text" />
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const YourLatestList = ({ date, year, title }) => {
     <article className="mb-2 max-w-max ">
       <div className="flex flex-row items-center  ">
         <div className="p-2">
-          <FaAngleDoubleRight className="text-md text-alt-white md:text-xl" />
+          <FaAngleDoubleRight className="text-md text-alt-white md:text-xl animate-float-horizontal-light" />
         </div>
         <div className="flex flex-row gap-10">
           <div className="flex flex-col leading-none">

@@ -1,28 +1,20 @@
 import React from "react";
 import { ImPlay2 } from "react-icons/im";
-const TopBanner = ({
-  title,
-  subtitle,
-  container,
-  src,
-  alt,
-  imgClassName,
-  iconTrue,
-}) => {
+const TopBanner = ({ title, subtitle, container, src, iconTrue }) => {
   return (
     <div className="flex flex-row ">
-      <div className="w-[30%] md:w-[20%]">
-        <img src={src} alt={alt} className={imgClassName} />
+      <div>
+        <img src={src} alt="profile picture" className="rounded-none" />
       </div>
       <div className={container}>
-        <div className="flex flex-col leading-none ">
+        <div className="flex flex-col leading-none">
           <div>
-            <h3 className="font-mainCond text-xl font-normal text-alt-white uppercase md:text-2xl lg:text-3xl">
+            <h3 className="font-mainCond text-xl font-normal text-alt-white uppercase whitespace-nowrap md:text-4xl  2xl:text-5xl">
               {title}
             </h3>
           </div>
           <div>
-            <h4 className="font-mainCond text-xl font-normal text-alt-pink uppercase md:text-2xl lg:text-3xl animate-pulse duration-500 ease-in-out">
+            <h4 className="font-mainCond text-xl font-normal text-alt-pink uppercase whitespace-nowrap md:text-4xl  2xl:text-5xl animate-pulse duration-500 ease-in-out">
               {subtitle}
             </h4>
           </div>

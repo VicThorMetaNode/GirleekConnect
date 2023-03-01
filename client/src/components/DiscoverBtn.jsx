@@ -6,11 +6,11 @@ const DiscoverBtn = ({ btnTitle }) => {
       onClick={() => {
         navigate("connect");
       }}
-      className="border border-alt-white px-2 py-2 bg-gray w-[100%] md:w-[50%]"
+      className="border border-alt-white px-2 py-2 bg-gray w-[100%] md:w-[40%]"
     >
       <div className="flex flex-row gap-5">
         <div>
-          <p className="font-btn text-alt-white text-sm md:text-lg uppercase">
+          <p className="font-btn text-alt-white text-sm md:text-lg uppercase 2xl:whitespace-nowrap">
             {btnTitle}
           </p>
         </div>
