@@ -6,9 +6,9 @@ const DiscoverBtn = ({ btnTitle }) => {
       onClick={() => {
         navigate("connect");
       }}
-      className="border border-alt-white px-2 py-2 bg-gray w-[100%] md:w-[40%]"
+      className="border border-alt-white px-2 py-2 bg-gray max-w-[20rem] w-full "
     >
-      <div className="flex flex-row gap-5">
+      <div className="flex flex-row justify-between ">
         <div>
           <p className="font-btn text-alt-white text-sm md:text-lg uppercase 2xl:whitespace-nowrap">
             {btnTitle}

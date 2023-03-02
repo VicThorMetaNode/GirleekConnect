@@ -12,7 +12,7 @@ const NextUpgrade = ({
     <div className="w-[full] bg-gray ">
       <div className="border border-white flex flex-row z-0 h-[7rem] justify-between md:gap-[15rem] ">
         <div className="flex flex-col  ml-2 mt-2 ">
-          <div c>
+          <div>
             <p className="font-main text-xl font-semibold text-alt-white uppercase">
               {" "}
               {title}

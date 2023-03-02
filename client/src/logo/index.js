@@ -1,6 +1,21 @@
-import {HiOutlineViewGrid, HiOutlineSpeakerphone, HiOutlineCreditCard, HiOutlinePaperAirplane, HiOutlineUserCircle, HiOutlineLogout   } from "react-icons/hi";
-
+import {
+  FiGrid,
+  FiLink,
+  FiUser,
+  FiFolderPlus,
+  FiUsers,
+  FiLogOut,
+  FiSunrise,
+  FiSunset,
+} from "react-icons/fi";
 
 export {
-    HiOutlineViewGrid, HiOutlineSpeakerphone, HiOutlineCreditCard, HiOutlinePaperAirplane, HiOutlineUserCircle, HiOutlineLogout 
-    }
+  FiGrid,
+  FiLink,
+  FiUser,
+  FiFolderPlus,
+  FiUsers,
+  FiLogOut,
+  FiSunrise,
+  FiSunset,
+};
