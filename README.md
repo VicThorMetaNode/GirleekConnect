@@ -29,6 +29,8 @@ FIGMA MOCKUP---->  https://www.figma.com/file/pc1i7iwtcPBNsqb2wPKUqn/GirleekConn
 <p>✔️Apollo/client</p>
 <p>✔️React-icons</p>
 <p>✔️React-hot-toast</p>
+<p>✔️Framer-Motion</p>
+<p>✔️React-responsive</p>
 
 
 **SERVER-SIDE**
