@@ -9,7 +9,8 @@ FRONTEND SIDE----> https://www.notion.so/Girleek-tech-FRONTENDSIDE-dfaee84f50c84
 
 FIGMA MOCKUP---->  https://www.figma.com/file/pc1i7iwtcPBNsqb2wPKUqn/GirleekConnect?node-id=0%3A1&t=xeelB7u5KUJYhULU-1
 
-![Girleek-connect01](https://user-images.githubusercontent.com/98230162/218571019-f49563f5-8258-47eb-b68f-35e154e445b6.PNG)
+
+![girleek-connect](https://user-images.githubusercontent.com/98230162/222806013-3911853f-a22d-4fbd-bf36-b4ee5151c086.PNG)
 
 
 
