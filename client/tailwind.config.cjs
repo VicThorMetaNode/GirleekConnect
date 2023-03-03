@@ -45,6 +45,8 @@ module.exports = {
       'alt-gray': '#242244',
       'icon-gray': '#2A324B',
       'blue-connect': '#1D1A3F',
+      'active': '#ACACE6',
+      'disabled': '#46405f',
     },
     fontFamily: {
       main: ['Barlow', 'sans-serif'],

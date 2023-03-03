@@ -15,8 +15,8 @@ const Icon = ({ styles, name, isActive, disabled, handleClick }) => {
     >
       {icon && (
         <div
-          className={`text-3xl ${isActive !== name && "text-[#ACACE6]"} ${
-            disabled && "text-[#68627c]"
+          className={`text-3xl ${isActive !== name && "text-active"} ${
+            disabled && "text-disabled"
           }`}
         >
           {icon}

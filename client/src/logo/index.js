@@ -7,6 +7,8 @@ import {
   FiLogOut,
   FiSunrise,
   FiSunset,
+  FiToggleRight,
+  FiToggleLeft
 } from "react-icons/fi";
 
 export {
@@ -18,4 +20,6 @@ export {
   FiLogOut,
   FiSunrise,
   FiSunset,
+  FiToggleRight,
+  FiToggleLeft
 };
