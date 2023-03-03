@@ -34,6 +34,7 @@ FIGMA MOCKUP---->  https://www.figma.com/file/pc1i7iwtcPBNsqb2wPKUqn/GirleekConn
 
 
 **SERVER-SIDE**
+<p>✔️SUPABASE-JS</p>
 <p>✔️MONGOOSE</p>
 <p>✔️NODEMON</p>
 <p>✔️CORS</p>
