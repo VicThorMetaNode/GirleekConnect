@@ -1,0 +1,15 @@
+CREATE TABLE coach (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name TEXT NOT NULL,
+  password TEXT NOT NULL,
+  img bytea NOT NULL,
+  email TEXT NOT NULL,
+  bio TEXT NOT NULL,
+  industryCat TEXT[] NOT NULL,
+  mainProject TEXT NOT NULL,
+  linkedinUrl TEXT NOT NULL,
+  location TEXT NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  is_deleted BOOLEAN DEFAULT FALSE,
+);
