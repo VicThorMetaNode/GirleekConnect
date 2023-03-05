@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
-  },
+    "start": "node server/db.js",
+    "dev": "nodemon --watch server --ext js --exec node server/db.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^4.11.0",
     "@supabase/supabase-js": "^2.10.0",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "prisma": "^4.11.0"
   }
 }

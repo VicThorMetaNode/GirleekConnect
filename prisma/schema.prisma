@@ -1,0 +1,135 @@
+// This is your Prisma schema file,
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id         String   @id @default(uuid())
+  name       String   @unique
+  password   String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  is_deleted Boolean  @default(false)
+}
+
+model Client {
+  id          Int              @id @default(autoincrement())
+  name        String           @unique
+  username    String           @unique
+  password    String
+  img         Bytes
+  email       String           @unique
+  bio         String
+  industryCat IndustryCategory @default(BUSINESS)
+  mainProject String
+  linkedinUrl String?          @unique
+  location    String?
+  created_at  DateTime         @default(now())
+  updated_at  DateTime         @updatedAt
+  is_deleted  Boolean          @default(false)
+}
+
+model Coach {
+  id          Int              @id @default(autoincrement())
+  name        String           @unique
+  password    String
+  img         Bytes
+  email       String           @unique
+  bio         String
+  industryCat IndustryCategory @default(EDUCATION)
+  mainProject String
+  linkedinUrl String           @unique
+  location    String
+  created_at  DateTime         @default(now())
+  updated_at  DateTime         @updatedAt
+  is_deleted  Boolean          @default(false)
+  projects    Project[]
+  events      Event[]
+}
+
+model Project {
+  id          Int              @id @default(autoincrement())
+  name        String
+  img         Bytes
+  status      ProjectStatus    @default(NOT_STARTED)
+  industryCat IndustryCategory @default(BUSINESS)
+  coach       Coach?           @relation(fields: [coachId], references: [id])
+  coachId     Int
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  isDeleted   Boolean          @default(false)
+
+  @@index([coachId])
+}
+
+enum ProjectStatus {
+  NOT_STARTED
+  BACKLOG
+  SPRINTLOG
+  IN_PROGRESS
+  UNDER_REVIEW
+  WAITING_VALIDATION
+  COMPLETED
+  DISCARDED
+}
+
+model Event {
+  id          Int              @id @default(autoincrement())
+  name        String
+  img         Bytes
+  status      EventStatus      @default(COMING_SOON)
+  cat         EventCategory    @default(OTHER)
+  industryCat IndustryCategory @default(BUSINESS)
+  coach       Coach?           @relation(fields: [coachId], references: [id])
+  coachId     Int
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  isDeleted   Boolean          @default(false)
+
+  @@index([coachId])
+}
+
+enum EventCategory {
+  WEBINAR
+  COACHING
+  MASTERCLASS
+  NETWORKING
+  TALK
+  PARTNER
+  WORKSHOP
+  OTHER
+}
+
+enum EventStatus {
+  COMING_SOON
+  LIVE_NOW
+  PAST
+  CANCELLED
+}
+
+enum IndustryCategory {
+  ADVERTISING_MARKETING
+  COMPUTER_TECHNOLOGY
+  EDUCATION
+  FINANCE_ECONOMIC
+  HEALTH_CARE
+  MEDIA_NEWS
+  FOOD_BEVERAGE
+  FASHION
+  ENTERTAINMENT
+  ENERGY
+  CONSTRUCTION
+  AGRICULTURE
+  AEROSPACE
+  STEM
+  POLITICS
+  ART
+  BUSINESS
+  OTHER
+}

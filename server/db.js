@@ -1,12 +1,14 @@
-// This code connects to Supabase, signs in anonymously, creates a GraphQL handler, and sets up an HTTP server to listen on the specified port. 
-//The Supabase client object is passed to the GraphQL context to be used in resolvers.
 const { createClient } = require('@supabase/supabase-js');
-const { createGraphQLHandler } = require('@supabase/supabase-graphql');
+const { PrismaClient } = require('@prisma/client');
 const http = require('http');
 require('dotenv').config();
+var colors = require('colors');
+colors.enable();
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
+
+const prisma = new PrismaClient();
 
 const connectDB = () => {
   console.log('Connecting to SUPABASE...'.yellow.underline.bold);
@@ -33,7 +35,7 @@ const server = http.createServer(async (req, res) => {
     supabaseUrl,
     supabaseKey,
     graphqlOptions: {
-      context: { supabase }, // pass the SupaBase client object to the context
+      context: { supabase, prisma }, // pass the Prisma client object to the context
     },
   })(req, res);
 
@@ -48,18 +50,3 @@ const port = process.env.PORT || 5432;
 server.listen(port, () => {
   console.log(`Server running on port ${port}`.green.underline.bold);
 });
-
-
-
-
-
-
-// const mongoose = require('mongoose');
-
-// const connectDB = async () => {
-//   const conn = await mongoose.connect(process.env.MONGO_URI);
-
-//   console.log(`MongoDB Connected: ${conn.connection.host}`.cyan.underline.bold);
-// };
-
-// module.exports = connectDB;
