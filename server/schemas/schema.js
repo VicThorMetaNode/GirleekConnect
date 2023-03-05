@@ -1,12 +1,3 @@
-//IMPORT DATA from sampleData.js
-// const { projects, clients } = require('../sampleData')
-
-//IMPORT MONGOOSE MODELS
-const Coach = require("../models/Coach");
-const Client = require("../models/Client");
-const Project = require("../models/Project");
-const Event = require("../models/Event");
-const Admin = require("../models/Admin");
 
 const bcrypt = require("bcryptjs");
 //-------------------- GRAPHQL SETUP

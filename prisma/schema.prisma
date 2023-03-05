@@ -57,10 +57,13 @@ model Project {
   id          Int              @id @default(autoincrement())
   name        String
   img         Bytes
+  description String
   status      ProjectStatus    @default(NOT_STARTED)
   industryCat IndustryCategory @default(BUSINESS)
   coach       Coach?           @relation(fields: [coachId], references: [id])
   coachId     Int
+  start_time  DateTime
+  end_time    DateTime
   createdAt   DateTime         @default(now())
   updatedAt   DateTime         @updatedAt
   isDeleted   Boolean          @default(false)
@@ -83,11 +86,14 @@ model Event {
   id          Int              @id @default(autoincrement())
   name        String
   img         Bytes
+  description String
   status      EventStatus      @default(COMING_SOON)
   cat         EventCategory    @default(OTHER)
   industryCat IndustryCategory @default(BUSINESS)
   coach       Coach?           @relation(fields: [coachId], references: [id])
   coachId     Int
+  start_time  DateTime
+  end_time    DateTime
   createdAt   DateTime         @default(now())
   updatedAt   DateTime         @updatedAt
   isDeleted   Boolean          @default(false)
