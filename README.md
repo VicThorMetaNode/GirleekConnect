@@ -1,5 +1,5 @@
 # PEOPLE & PROJECT MANAGEMENT PLATFORM
-Easily manage people and projects related to Girleek's missions using the latest technologies: **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speddy Web Compiler]** 
+Easily manage people and projects related to Girleek's missions using the latest technologies: **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speedy Web Compiler]** 
 
 Follow this project on my SCRUM on Notion.io 
 
