@@ -1,12 +1,5 @@
 # PEOPLE & PROJECT MANAGEMENT PLATFORM
 Easily manage people and projects related to Girleek's missions using the latest technologies: **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speedy Web Compiler]** 
-
-Follow this project on my SCRUM on Notion.io 
-
-BACKEND SIDE----> https://www.notion.so/Girleek-tech-Weekly-Work-Planning-19319659a76b443c997d9f681ac91f74?pvs=4
-
-FRONTEND SIDE----> https://www.notion.so/Girleek-tech-FRONTENDSIDE-dfaee84f50c84e91be8e03f68e189c04?pvs=4
-
 FIGMA MOCKUP---->  https://www.figma.com/file/pc1i7iwtcPBNsqb2wPKUqn/GirleekConnect?node-id=0%3A1&t=xeelB7u5KUJYhULU-1
 
 
