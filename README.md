@@ -1,6 +1,8 @@
-# PEOPLE & PROJECT MANAGEMENT PLATFORM
-Easily manage people and projects related to Girleek's missions using the latest technologies: **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speedy Web Compiler]** 
-FIGMA MOCKUP---->  https://www.figma.com/file/pc1i7iwtcPBNsqb2wPKUqn/GirleekConnect?node-id=0%3A1&t=xeelB7u5KUJYhULU-1
+# PEOPLE & PROJECT MANAGEMENT PLATFORM -DEMO
+- **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speedy Web Compiler]**
+<p>This project was included in a client demonstration. The current version serves as a demo and does not possess complete security measures, as that was not its primary focus. The intention is to provide insight into how I develop people/project management platforms, aiding in the tracking of individuals assigned to various projects.</p>
+<p> Easily manage people and projects related to Girleek's missions using the latest technologies: **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speedy Web Compiler]** </p>
+
 
 
 ![girleek-connect](https://user-images.githubusercontent.com/98230162/222806013-3911853f-a22d-4fbd-bf36-b4ee5151c086.PNG)
