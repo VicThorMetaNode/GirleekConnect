@@ -1,6 +1,6 @@
 # PEOPLE & PROJECT MANAGEMENT PLATFORM -DEMO
 - **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speedy Web Compiler]**
-<p> <em>This project was included in a client demonstration. The current version serves as a demo and does not possess complete security measures, as that was not its primary focus. The intention is to provide insight into how I develop people/project management platforms, aiding in the tracking of individuals assigned to various projects.</em> </p>
+<p>DISCLAIMER: <em>This project was included in a client demonstration. The current version serves as a demo and does not possess complete security measures, as that was not its primary focus. The intention is to provide insight into how I develop people/project management platforms, aiding in the tracking of individuals assigned to various projects.</em> </p>
 <p> Easily manage people and projects related to Girleek's missions using the latest technologies: **REACT** - **VITEJS** - **TAILWIND** - **GRAPHQL** -  **APOLLO** - **ATLAS - MONGODB** - **SWC [Speedy Web Compiler]** </p>
 
 
